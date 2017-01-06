@@ -1,5 +1,20 @@
 @font-face {
-  font-family: Roboto;
-  src: url('../fonts/opensans-light.woff');
-  font-weight: 300;
+  font-family: GothamPro;
+  src: url('../fonts/GothaProBla.woff');
+  font-weight: 900;
+}
+@font-face {
+  font-family: GothamPro;
+  src: url('../fonts/GothaProBol.woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: PTSans;
+  src: url('../fonts/PT_Sans-Web-Bold.woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: PTSans;
+  src: url('../fonts/PT_Sans-Web-Regular.woff');
+  font-weight: 400;
 }

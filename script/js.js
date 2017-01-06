@@ -1,5 +1,3 @@
-var name = $('input[name="name"]');
-var phone = $('input[name="phone"]');
 var requared = $('input[data-required]');
 var modal = '.modal';
 var navList = $('.nav-link');
@@ -8,15 +6,7 @@ var scrollDuration = 600;
 var form = $('form');
 
 
-name.on('keypress', function() {
-    var that = this;
-
-    setTimeout(function() {
-        var res = /[^A-Za-zА-Яа-яЁё]/g.exec(that.value);
-        that.value = that.value.replace(res, '');
-    }, 0);
-});
-phone.inputmask("+7(999)9999999");
+$('input[name="phone"]').inputmask("+7(999)9999999");
 requared.blur(function() {var self = $(this);if($(this).val().length == "") {self.addClass('input_error');setTimeout(function () {self.removeClass('input_error')}, 2000)}});
 requared.focus(function() {$(this).removeClass('input_error');});
 
@@ -89,19 +79,7 @@ navList.on('click', function(e){
 
 
 //// Слайдер
-$('.slider').slick({
-    slidesToShow: 3,
-    arrows: false,
-    centerMode: true,
-    responsive: [
-        {
-            breakpoint: 680,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ]
-});
+$('.slider').slick();
 
 //// Галерея на слайдере
 $('.zoom').fancybox();

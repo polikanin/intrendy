@@ -1,6 +1,7 @@
 body{
   padding: 0;
   margin: 0;
+  font-family: PTSans;
 }
 .wrapper{
   width: $width-lg;
@@ -29,10 +30,13 @@ header, section, footer{
   box-sizing: border-box;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
+textarea,
 button,
 input{
+  font-family: inherit;
   position: relative;
   box-sizing: border-box;
   border: none;
@@ -58,5 +62,89 @@ button{
 .input{
   &_error{
 
+  }
+}
+
+.heading{
+  color: #2b2a29;
+  font-family: GothamPro;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 64px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  &:before{
+    content: '';
+    background-color: #f29541;
+    position: absolute;
+    display: block;
+    z-index: -1!important;
+    @include centered();
+  }
+}
+
+.subheading{
+  font-family: GothamPro;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #212121;
+  text-align: center;
+
+  span{
+    color: #f29541;
+    display: block;
+  }
+}
+
+.block-heading{
+  font-family: GothamPro;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #212121;
+  position: relative;
+  z-index: 1;
+  padding-left: 128px;
+  letter-spacing: 0.6px;
+
+  span{
+    color: #f29541;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:after{
+    content: '';
+    width: 95px;
+    height: 97px;
+    background-color: #212121;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.text-block{
+  border: 3px solid #c5c5c5;
+
+  p{
+    color: #2b2a29;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 10px;
   }
 }
