@@ -78,8 +78,19 @@ navList.on('click', function(e){
 });
 
 
+var slideCount = function (block) {
+    var count = $(block + ' .slider .slide').length;
+    $(block + ' .slide-count').text(count);
+};
+slideCount('.s8');
+
 //// Слайдер
-$('.slider').slick();
+$('.s8 .slider').slick();
+$('.s9 .slider').slick();
+
+$('.s8 .slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    $('.s8 .current-slide').text(++currentSlide);
+});
 
 //// Галерея на слайдере
 $('.zoom').fancybox();

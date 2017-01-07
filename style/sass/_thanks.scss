@@ -1,0 +1,286 @@
+.header{
+  background-image: url("../image/thanks/header/bg.png");
+  padding: 33px 0 35px 0;
+
+  .logo{
+    display: block;
+    margin: 0 0 67px 0;
+  }
+
+  .heading{
+    text-align: left;
+    padding-left: 28px;
+
+    &:before{
+      width: 95px;
+      height: 95px;
+      top: 25px;
+      left: 46px;
+    }
+  }
+}
+
+.s1{
+  padding: 80px 0 30px 0;
+
+  .subtitle{
+    color: #ef7f1a;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 34px;
+    position: relative;
+    z-index: 1;
+    padding-left: 93px;
+
+    &:after{
+      content: '';
+      width: 69px;
+      height: 70px;
+      background-color: #212121;
+      position: absolute;
+      top: 9px;
+      left: -2px;
+      z-index: 1;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 15px;
+      left: 18px;
+      width: 62px;
+      height: 59px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../image/thanks/section1/icon.png");
+    }
+  }
+
+  .video-heading{
+    color: black;
+    font-family: GothamPro;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 63px 0 30px 0;
+  }
+
+  .video{
+    width: 756px;
+    height: 432px;
+    display: block;
+    margin: 0 0 0 0;
+
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .quote{
+    max-width: 930px;
+    margin: 34px 0 0 0;
+
+    span{
+      display: block;
+      color: #ef7f1a;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 11px;
+    }
+
+    line-height: 24px;
+    color: #2b2a29;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.s2{
+  padding: 39px 0 0 0;
+
+  .container{
+    @include flex-box();
+    @include justify-content(space-between);
+  }
+
+  .item{
+    width: 570px;
+  }
+
+  .block-heading{
+    color: #ef8326;
+    font-family: GothamPro;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 64px;
+    text-transform: uppercase;
+    padding-left: 91px;
+    margin-bottom: 28px;
+
+    span{
+      display: block;
+      color: #ef7f1a;
+      font-family: PTSans;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: none;
+      letter-spacing: 0px;
+    }
+
+    &:after{
+      width: 69px;
+      height: 70px;
+      top: 15px;
+    }
+
+    &:before{
+      width: 70px;
+      height: 70px;
+      top: 15px;
+      left: 13px;
+      background-image: url("../image/thanks/section2/icon.png");
+    }
+  }
+
+  .subheading{
+    text-align: left;
+    color: #ef8326;
+    line-height: 33px;
+    margin-bottom: 16px;
+
+    span{
+      display: inline;
+      color: #212121;
+    }
+  }
+
+  .text{
+    color: #2b2a29;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .banner{
+    width: 100%;
+    height: 311px;
+    background-color: #2f2f2f;
+    display: block;
+    margin: 5px 0 17px 0;
+  }
+}
+
+.s3{
+  padding: 169px 0 70px 0;
+
+  .heading{
+    top: -39px;
+    margin-bottom: 13px;
+
+    &:before{
+      width: 159px;
+      height: 163px;
+    }
+  }
+
+  .subtitle{
+    color: #ef7f1a;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .container{
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 170px;
+  }
+
+  .price{
+    width: 460px;
+    text-align: center;
+    background-color: #9a9a9a;
+    margin: 38px auto 3px auto;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .new-price{
+    color: #ef7f1a;
+    font-family: GothamPro;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 26px;
+  }
+
+  .text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #2b2a29;
+    max-width: 710px;
+    width: 100%;
+    margin: 0 auto 5px auto;
+    text-align: center;
+  }
+
+  .timing{
+    max-width: 730px;
+    position: absolute;
+    left: calc(50% - 365px);
+    bottom: -186px;
+    z-index: 1;
+    padding: 53px 0 50px 0;
+  }
+
+  .btn{
+    width: 730px;
+    height: 74px;
+    line-height: 74px;
+    margin: 244px auto 0 auto;
+  }
+}
+
+.thanks-step{
+  .header{
+    padding: 33px 0 105px 0;
+
+    .heading{
+      padding-left: 0;
+
+      &:before{
+        display: none;
+      }
+    }
+  }
+
+  .s1{
+    padding: 80px 0 140px 0;
+    
+    .subheading{
+      text-align: left;
+      margin-bottom: 50px;
+    }
+
+    .links{
+      @include flex-box();
+      @include justify-content(start);
+
+      a{
+        margin-right: 65px;
+      }
+    }
+  }
+}

@@ -61,7 +61,44 @@ button{
 
 .input{
   &_error{
+    border: 2px solid #e47919!important;
 
+    &::-webkit-input-placeholder {color:#e47919;}
+    &::-moz-placeholder          {color:#e47919;}
+    &:-moz-placeholder           {color:#e47919;}
+    &:-ms-input-placeholder      {color:#e47919;}
+  }
+}
+
+.btn{
+  color: white;
+  font-family: GothamPro;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 324px;
+  height: 51px;
+  line-height: 51px;
+  background-color: #e47919;
+  display: block;
+  margin: 0 auto 0 auto;
+  text-align: left;
+  @include transition();
+
+  &:hover{
+    background-color: #f39139;
+  }
+
+  &:before{
+    content: '';
+    width: 31px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../image/ui/white_arrow.png");
+    display: inline-block;
+    vertical-align: middle;
+    margin: -1px 11px 0 12px;
   }
 }
 
@@ -146,5 +183,25 @@ button{
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 10px;
+  }
+}
+
+.timing{
+  width: 100%;
+  max-width: 570px;
+  border: 1px solid #c5c5c5;
+  padding: 34px 0 40px 0;
+  background-color: white;
+  margin: 0 auto;
+
+  .subheading{
+    text-align: center;
+    line-height: 35px;
+    color: #2b2a29;
+    margin-bottom: 45px;
+
+    span{
+      color: #ef7f1a;
+    }
   }
 }
